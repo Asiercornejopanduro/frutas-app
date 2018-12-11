@@ -29,5 +29,7 @@ export class CrudFrutasComponent implements OnInit {
   irDetalle(id:number){
     this.router.navigate(['/formulario', id])
   }
+
+  
 }
 

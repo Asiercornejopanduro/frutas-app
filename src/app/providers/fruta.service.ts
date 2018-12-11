@@ -42,6 +42,7 @@ export class FrutaService {
       "precio": fruta.precio,
       "oferta": fruta.oferta,
       "descuento": fruta.descuento,
+      "colores":fruta.colores,
       "imagen": fruta.imagen
 
     };
@@ -75,6 +76,7 @@ export class FrutaService {
       "precio": fruta.precio,
       "oferta": fruta.oferta,
       "descuento": fruta.descuento,
+      "colores":fruta.colores,
       "imagen": fruta.imagen
 
     };

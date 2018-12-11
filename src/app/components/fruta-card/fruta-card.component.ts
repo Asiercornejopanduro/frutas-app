@@ -51,7 +51,6 @@ export class FrutaCardComponent implements OnInit {
   }
   comprar() {
     console.trace('FrutaCardComponent comprar');
-    alert(`lo sentimos pero de momentro tenemos esta opcion desabilitada ##${this.fruta.nombre}##`);
     //Emitimos el evento al componente padre y enviamos el parametro frutaClick
     this.clickCompra.emit({frutaClick : this.fruta});
   }

@@ -16,6 +16,7 @@ export class FormularioComponent implements OnInit {
   mensaje:string;
   fruta:Fruta;
   arrayColores:string[];
+  
 
 
 
@@ -46,7 +47,7 @@ export class FormularioComponent implements OnInit {
         [//validacones
           Validators.required,
           Validators.min(0.1),
-          Validators.maxLength(999)
+          Validators.max(9999)
         ]
       ),
       calorias: new FormControl(
@@ -120,24 +121,37 @@ export class FormularioComponent implements OnInit {
 
   sumitar() {
     console.trace('FormularioComponent sumitar %o', this.formulario);
-    if (this.fruta.id==-1) {
-      
-    } else {
-      
-    }
+    
     let fruta = new Fruta();
+    fruta.id=this.fruta.id;
     fruta.nombre = this.formulario.controls.nombre.value;
     fruta.precio = this.formulario.controls.precio.value;
     fruta.calorias = this.formulario.controls.calorias.value;
+    fruta.oferta=this.formulario.controls.oferta.value;
     fruta.descuento = this.formulario.controls.descuento.value;
     fruta.imagen = this.formulario.controls.imagen.value;
-    this.frutaService.crear(fruta).subscribe(data => {
-      console.debug('datos recibidos %o', data);
+    this.formulario.controls.colores.value.forEach(el => {
+      fruta.colores.push(el);
     });
+
+    if (fruta.id==-1) {
+      this.frutaService.crear(fruta).subscribe(data => {
+        console.debug('datos recibidos %o', data);
+        
+      });
+      this.mensaje="Fruta añadida correctamente";
+    } else {
+      this.frutaService.modificar(fruta).subscribe(data => {
+        console.debug('datos recibidos %o', data);
+      });
+      this.mensaje="Fruta modificada correctamente";
+    }
+    
+    
 
 
     console.debug('llamar provider pasando la fruta %o: ', fruta);
-    this.mensaje="Fruta añadida correctamente"
+    
 
   }
 
@@ -161,5 +175,11 @@ export class FormularioComponent implements OnInit {
       arrayColores.removeAt(index);
     } 
     
+  }
+  eliminar(fruta:Fruta){
+    this.frutaService.eliminar(fruta).subscribe(data =>{
+      console.debug('Fruta eliminada %o'+data);
+      this.mensaje="Fruta eliminada correctamente";
+    })
   }
 }

@@ -29,6 +29,7 @@
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <li class="dropdpwn-item" *ngFor="let f of carroCompra, let i = index"><img src="{{f.fruta.imagen}}" alt="imagen fruta">{{f.nombre}}
               <b>X {{f.cantidad}}</b> {{f.total| number: '1.2-2'}}
+              <br>
               <a (click)="sumarFruta(fruta, i)" class="btn btn-secondary">+</a> <b>{{f.cantidad}}</b> <a (click)="restarFruta(fruta,i)" class="btn btn-secondary">-</a> </li>
             <li class="dropdpwn-item border-top"><b>TOTAL: {{totalCompra| number: '1.2-2'}} €</b></li>
           

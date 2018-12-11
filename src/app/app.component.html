@@ -1,10 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Bienvenido a la app de frutas!
-  </h1>
-</div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <a class="navbar-brand" href="#">
+        <img src="http://www.extremaduradavida.com/wp-content/uploads/2015/11/LA-REPERA-Logo1-150x150.jpg" width="50" height="50" alt="">
+      </a>
+  <a class="btn btn-primary  my-2 my-sm-0" [routerLink]="['frutas']">{{(isLogged())? 'Lista frutas' : 'Zona privada'}}</a>
+  <button (click)="logout()" class="btn btn-danger my-2 my-sm-0">Cerrar sesión</button>
 
+</nav>
 <div class="container">
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>

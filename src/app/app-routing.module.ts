@@ -4,13 +4,15 @@ import { ComparadorComponent } from './components/comparador/comparador.componen
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { CrudFrutasComponent } from './components/crud-frutas/crud-frutas.component';
 import { LoginComponent } from './components/login/login.component';
+import { BackofficeGuard } from './guards/backoffice.guard';
 
 const routes: Routes = [
   {path: 'home', component: ComparadorComponent},
   {path: 'formulario', component: FormularioComponent},
   {path: 'formulario/:id', component: FormularioComponent},
-  {path: 'frutas', component: CrudFrutasComponent},
+  {path: 'frutas', component: CrudFrutasComponent,canActivate:[BackofficeGuard]},
   {path: 'login', component: LoginComponent},
+  {path: 'listado', component: CrudFrutasComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 

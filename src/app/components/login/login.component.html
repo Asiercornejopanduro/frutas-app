@@ -1,3 +1,23 @@
-<p>
-  login works!
-</p>
+<form [formGroup]="formulario" (ngSubmit)="sumitar()" novalidate>
+<h3>Nombre: admin</h3>
+<h3>Password: admin</h3>
+<div class="alert alert-warning" role="alert" *ngIf="msg!=''">
+    {{msg}}
+   </div>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" formControlName="nombre" class="form-control" id="nombre" placeholder="Min 2 y max 25" value="admin"/>
+      <small *ngIf="formulario.controls.nombre.invalid && formulario.controls.nombre.touched" class="form-text text-danger">Mínimo 2 y máximo 25 caracteres</small>
+      <small *ngIf="formulario.controls.nombre.valid && formulario.controls.nombre.touched" class="form-text text-success">Correcto</small>
+    </div>
+  
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" formControlName="password" class="form-control" id="password" placeholder="Min 5 y max 25" value="admin"/>
+      <small *ngIf="formulario.controls.password.invalid" class="form-text text-danger">Mínimo 5 y máximo 25 caracteres</small>
+      <small *ngIf="formulario.controls.password.valid" class="form-text text-success">Correcto</small>
+    </div>
+  
+    <input type="submit" class="btn btn-primary btn-block" value="Acceder" [disabled]="formulario.status === 'INVALID'" />
+  
+  </form>
