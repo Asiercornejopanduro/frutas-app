@@ -1,0 +1,131 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "tareas": [
+    {
+      "id": 1,
+      "titulo": "Cambiar readme",
+      "terminado": false
+    },
+    {
+      "id": 2,
+      "titulo": "Tarea terminada",
+      "terminado": true
+    },
+    {
+      "id": 3,
+      "titulo": "Formularios reactivos",
+      "terminado": false
+    }
+  ],
+  "frutas": [
+    {
+      "id": 1,
+      "nombre": "banana",
+      "calorias": 12,
+      "colores": [
+        {
+          "color": "amarillo"
+        },
+        {
+          "color": "verde"
+        }
+      ],
+      "oferta": false,
+      "descuento": 0,
+      "imagen": "https://www.bigbasket.com/media/uploads/p/s/10000345_18-fresho-banana-nendran.jpg",
+      "precio": 12
+    },
+    {
+      "id": 6,
+      "nombre": "fresa",
+      "calorias": 100,
+      "colores": [
+        {
+          "color": "rosa"
+        },
+        {
+          "color": "verde"
+        },
+        {
+          "color": "rojo"
+        }
+      ],
+      "oferta": true,
+      "descuento": 25,
+      "imagen": "https://plazavea.vteximg.com.br/arquivos/ids/169309-150-150/62312.jpg",
+      "precio": 0.75
+    },
+    {
+      "id": 7,
+      "nombre": "pera",
+      "calorias": 100,
+      "colores": [
+        {
+          "color": "rosa"
+        },
+        {
+          "color": "verde"
+        },
+        {
+          "color": "rojo"
+        }
+      ],
+      "oferta": true,
+      "descuento": 15,
+      "imagen": "http://www.juver.com/wp-content/uploads/2015/06/pera-150x150.jpg",
+      "precio": 0.65
+    },
+    {
+      "nombre": "Aguacate",
+      "calorias": 23,
+      "precio": 0.75,
+      "oferta": false,
+      "descuento": 0,
+      "imagen": "http://www.radiocaibarien.icrt.cu/wp-content/uploads/2016/03/Aguacate-1-150x150.jpg",
+      "id": 2
+    },
+    {
+      "nombre": "Manzana",
+      "calorias": 11,
+      "precio": 0.47,
+      "oferta": false,
+      "descuento": 5,
+      "imagen": "http://www.juver.com/wp-content/uploads/2015/05/manzana-150x150.jpg",
+      "id": 3
+    },
+    {
+      "nombre": "Uvas",
+      "calorias": 12,
+      "precio": 0.75,
+      "oferta": false,
+      "descuento": 0,
+      "imagen": "https://navidad.es/wp-content/uploads/2008/12/uvas-150x150.jpeg",
+      "id": 4
+    },
+    {
+      "nombre": "banana",
+      "calorias": 12,
+      "precio": 12,
+      "oferta": false,
+      "descuento": 0,
+      "imagen": "https://www.bigbasket.com/media/uploads/p/s/10000345_18-fresho-banana-nendran.jpg",
+      "id": 8
+    }
+  ]
+}
