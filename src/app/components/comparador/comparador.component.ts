@@ -17,6 +17,7 @@ export class ComparadorComponent implements OnInit {
   private totalCompra:number;
   private todas:boolean;
   private textoFiltro:string;
+  
 
 
   /*FrutaService es @Injectable por lo cual debemos declararlo
@@ -28,6 +29,7 @@ export class ComparadorComponent implements OnInit {
     this.totalCompra=0;
     this.todas=true;
     this.textoFiltro="Todas";
+    
   }
 
 

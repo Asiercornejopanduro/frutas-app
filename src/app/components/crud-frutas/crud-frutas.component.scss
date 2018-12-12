@@ -19,3 +19,31 @@ table{
 img{
     max-height: 70px;
 }
+div.buscador{
+    display: inline;
+}
+
+input.ng-untouched.ng-pristine.ng-valid{
+    height: 45px;
+    width: 200px;
+    margin-right: 15px;
+}
+
+input.ng-valid.ng-dirty.ng-touched{
+  height: 45px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+input.ng-untouched.ng-valid.ng-dirty{
+  height: 45px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+div.row{
+    display: inline;
+    position: relative;
+    top: 34px;
+    left: 16px;
+}

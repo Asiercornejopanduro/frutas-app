@@ -36,7 +36,7 @@
   </div>
   <div class="col">
     <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+      <button class="btn {{(carroCompra.length===0)?'btn-secondary':'btn-success'}} dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-shopping-cart"> {{totalCompra| number: '1.2-2'}} €</i>
       </button>
