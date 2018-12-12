@@ -8,11 +8,10 @@ import { BackofficeGuard } from './guards/backoffice.guard';
 
 const routes: Routes = [
   {path: 'home', component: ComparadorComponent},
-  {path: 'formulario', component: FormularioComponent},
-  {path: 'formulario/:id', component: FormularioComponent},
+  {path: 'formulario', component: FormularioComponent,canActivate:[BackofficeGuard]},
+  {path: 'formulario/:id', component: FormularioComponent,canActivate:[BackofficeGuard]},
   {path: 'frutas', component: CrudFrutasComponent,canActivate:[BackofficeGuard]},
   {path: 'login', component: LoginComponent},
-  {path: 'listado', component: CrudFrutasComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 

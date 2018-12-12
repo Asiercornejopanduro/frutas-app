@@ -27,7 +27,7 @@ export class ComparadorComponent implements OnInit {
     this.carroCompra = [];
     this.totalCompra=0;
     this.todas=true;
-    this.textoFiltro="todas";
+    this.textoFiltro="Todas";
   }
 
 
@@ -102,11 +102,15 @@ export class ComparadorComponent implements OnInit {
     l.total = ((f.precio)-(f.precio*f.descuento/100))*l.cantidad;
     this.totalCompra-=l.precio;
     this.carroCompra[index]=l;
+    //Si eliminamos todas las frutas de un tipo se elimina la linea de pedido.
+    if (l.cantidad===0) {
+      this.carroCompra.splice(index);
+    } 
   }
 
   filtrar(){
     this.todas=!this.todas;
-    this.textoFiltro=(this.todas)?'todas':'Oferta';
+    this.textoFiltro=(this.todas)?'Todas':'Oferta';
   }
 }
 

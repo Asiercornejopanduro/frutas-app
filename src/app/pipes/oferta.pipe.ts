@@ -10,7 +10,7 @@ export class OfertaPipe implements PipeTransform {
     if (todas) {
       return value;
     } else {
-      return value.filter(el=> el.oferta===false);
+      return value.filter(el=> el.oferta===true);
     }
 
     

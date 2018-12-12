@@ -3,8 +3,8 @@
   
 </div>
 
-<table id="tablaOrdenable" class="display">
-<thead>
+<table id="tablaOrdenable" class="display table table-striped">
+<thead class="thead-dark">
   <tr>
     <th>Id</th>
     <th>Nombre</th>
@@ -21,7 +21,7 @@
       <td>{{f.id }}</td>
       <td><a [routerLink]="['../formulario',f.id]">{{f.nombre }}</a></td>
       <td>{{f.calorias }}</td>
-      <td>{{f.precio }}</td>
+      <td>{{(f.precio - (f.descuento*f.precio)/100)| number: '1.0-2'}}</td>
       <td>{{(f.oferta)?'Si':'No'}}</td>
       <td>{{f.descuento }}%</td>
       <td><img src="{{f.imagen }}"/></td>
