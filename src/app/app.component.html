@@ -3,7 +3,8 @@
         <img src="http://www.extremaduradavida.com/wp-content/uploads/2015/11/LA-REPERA-Logo1-150x150.jpg" width="50" height="50" alt="">
       </a>
   <a class="btn btn-primary  my-2 my-sm-0" [routerLink]="['frutas']">{{(isLogged())? 'Lista frutas' : 'Zona privada'}}</a>
-  <button (click)="logout()" class="btn btn-danger my-2 my-sm-0">Cerrar sesión</button>
+  
+  <button *ngIf="isLogged()" (click)="logout()" class="btn btn-danger my-2 my-sm-0">Cerrar sesión</button>
 
 </nav>
 <div class="container">

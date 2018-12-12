@@ -32,7 +32,7 @@ export class AppComponent {
     console.trace('AppComponent logout');
 
     this.loginService.logout();
-    this.router.navigate(['login']);
+    this.router.navigate(['home']);
 
   }
 }

@@ -35,9 +35,11 @@
   ],
   "frutas": [
     {
-      "id": 1,
       "nombre": "banana",
       "calorias": 12,
+      "precio": 12,
+      "oferta": true,
+      "descuento": 10,
       "colores": [
         {
           "color": "amarillo"
@@ -46,10 +48,8 @@
           "color": "verde"
         }
       ],
-      "oferta": false,
-      "descuento": 0,
       "imagen": "https://www.bigbasket.com/media/uploads/p/s/10000345_18-fresho-banana-nendran.jpg",
-      "precio": 12
+      "id": 1
     },
     {
       "id": 2,
@@ -169,7 +169,6 @@
       "imagen": "https://www.promofarma.com/blog/wp-content/uploads//pi%C3%B1a-150x150.jpg",
       "id": 9
     },
-
     {
       "nombre": "Melón",
       "precio": 1,
@@ -200,7 +199,7 @@
       "cantidad": 5,
       "id": 11
     },
-	{
+    {
       "nombre": "albaricoque",
       "precio": 3,
       "calorias": 2,
@@ -217,7 +216,7 @@
     },
     {
       "nombre": "Granada",
-      "precio": 3.80,
+      "precio": 3.8,
       "calorias": 25,
       "colores": [
         "Rojo",
@@ -230,9 +229,9 @@
       "cantidad": 1,
       "id": 13
     },
-	{
+    {
       "nombre": "Kiwi",
-      "precio": 1.20,
+      "precio": 1.2,
       "calorias": 47,
       "colores": [
         "Marron",
@@ -244,9 +243,9 @@
       "cantidad": 1,
       "id": 14
     },
-	{
+    {
       "nombre": "Cereza",
-      "precio": 3.80,
+      "precio": 3.8,
       "calorias": 12,
       "colores": [
         "Rojo",
@@ -258,9 +257,9 @@
       "cantidad": 1,
       "id": 15
     },
-	{
+    {
       "nombre": "Frambuesa",
-      "precio": 0.40,
+      "precio": 0.4,
       "calorias": 5,
       "colores": [
         "Rosa",
@@ -302,7 +301,7 @@
     },
     {
       "nombre": "Naranja",
-      "precio": 0.90,
+      "precio": 0.9,
       "calorias": 43,
       "colores": [
         "Naranja",

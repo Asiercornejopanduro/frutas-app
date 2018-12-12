@@ -15,6 +15,8 @@ export class ComparadorComponent implements OnInit {
   private fruta2: Fruta;
   private carroCompra: LineaProducto[];
   private totalCompra:number;
+  private todas:boolean;
+  private textoFiltro:string;
 
 
   /*FrutaService es @Injectable por lo cual debemos declararlo
@@ -24,6 +26,8 @@ export class ComparadorComponent implements OnInit {
     this.frutas = [];
     this.carroCompra = [];
     this.totalCompra=0;
+    this.todas=true;
+    this.textoFiltro="todas";
   }
 
 
@@ -100,6 +104,9 @@ export class ComparadorComponent implements OnInit {
     this.carroCompra[index]=l;
   }
 
-  
+  filtrar(){
+    this.todas=!this.todas;
+    this.textoFiltro=(this.todas)?'todas':'Oferta';
+  }
 }
 

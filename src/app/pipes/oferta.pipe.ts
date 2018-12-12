@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 
 @Pipe({
-  name: 'completas'
+  name: 'oferta'
 })
 export class OfertaPipe implements PipeTransform {
 

@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 //Componentes
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
@@ -29,13 +30,15 @@ import { OfertaPipe } from './pipes/oferta.pipe';
     LoginComponent,
     FrutaComponent,
     OfertaPipe
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    Ng2SearchPipeModule 
   ],
   providers: [
     FrutaService,
