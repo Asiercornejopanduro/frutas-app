@@ -37,8 +37,8 @@
     {
       "nombre": "banana",
       "calorias": 12,
-      "precio": 12,
-      "oferta": true,
+      "precio": 10,
+      "oferta": false,
       "descuento": 10,
       "colores": [
         {
