@@ -27,7 +27,7 @@ npm i ng2-search-filter --save
 
 ##Contenido de la App
 
-###Componentes
+##Componentes
 1. Comparador: 
   -Compara precio y calorias de las frutas seleccionadas.
   -Permite buscar la fruta deseada.
@@ -42,18 +42,18 @@ npm i ng2-search-filter --save
 5. Login
   -Formulario de logeo de la aplicación necesario para acceder a todas las vistas de la misma.
 
-###Guards o filtros
+##Guards o filtros
 1. BackoffciceGuard: Restringe el acceso a ciertas partes de la aplicación. 
 
-###Models
+##Models
 1. Fruta
 2. Linea-producto: El carrito de la compra es un array de Linea-producto.
 3. Usuario
 
-###Pipes
+##Pipes
 1. Oferta: Se utiliza para mostrar las frutas en oferta o todas las almacenadas.
 
-###Providers o services
+##Providers o services
 1. Fruta: Permite realizar un crud básico de frutas.
 2. Login: Controla si el usuario que intenta acceder a ciertas partes de la app esta logeado o no.
 
