@@ -13,7 +13,6 @@ import { ComparadorComponent } from './components/comparador/comparador.componen
 import { CrudFrutasComponent } from './components/crud-frutas/crud-frutas.component';
 import { FrutaCardComponent } from './components/fruta-card/fruta-card.component';
 import { LoginComponent } from './components/login/login.component';
-import { FrutaComponent } from './components/fruta/fruta.component';
 //Providers
 import { FrutaService } from './providers/fruta.service';
 
@@ -28,7 +27,6 @@ import { OfertaPipe } from './pipes/oferta.pipe';
     FrutaCardComponent,
     FormularioComponent,
     LoginComponent,
-    FrutaComponent,
     OfertaPipe
     
   ],
